@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="passwordgenerator">
+        <h2>password generator</h2>
+        <input id="input" type="text">
+        <div class="range">
+            <input min="8" max="100" id="range" type="range">
+            <span id="rangeValue" style="display: flex; justify-content: center;color: aqua;" >50</span>
+        </div>
+        <div class="checkbox">
+            <div>
+                <input id="upper" type="checkbox">
+                <span>Upper case</span>
+            </div>
+            <div>
+                <input id="Lower" type="checkbox">
+                <span>Lower case</span>
+            </div>
+            <div>
+                <input id="Number" type="checkbox">
+                <span>Number (1-9)</span>
+            </div>
+            <div>
+                <input id="special" type="checkbox">
+                <span>special charackter</span>
+            </div>
+
+            <div class="btn">
+                <button onclick="autoGenrate()">Genereate password</button>
+
+            </div>
+        </div>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
